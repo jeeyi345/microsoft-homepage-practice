@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 68.5px;
+}
+
+/* .box {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+} */
+
+/* RWD */
+
+@media screen and (max-width: 1083px) {}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+.fa-microsoft {
+    font-size: 24px;
+}
+
+.logo {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: dimgray;
+    align-self: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.left-menu, .right-menu {
+    display: flex;
+    margin: 0;
+}
+
+.left-menu li {
+    display: block;
+    padding: 16px 8px 10px;
+}
+
+.left-menu li a, .right-menu li a {
+    color: #262626;
+    text-decoration: none;
+}
+
+.top-right {
+    display: flex;
+}
+
+.right-menu {
+    align-self: center;
+}
+
+.right-menu li {
+    display: block;
+    padding: 16px 20px 10px;
+}
+
+.fa-user-circle {
+    font-size: 32px;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 31.25vw;
+    background-image: url(./../img/ms-pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-info {
+    padding-left: 70px;
+}
+
+.carousel-buy-btn {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.carousel-buy-btn::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 0;
+    background-color: white;
+    transition-duration: 0.1s;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 9px;
+    left: 20px;
+}
+
+.carousel-buy-btn:hover::after {
+    height: 2px;
+}
+
+#carousel2 {
+    padding-top: 48px;
+}
+
+#carousel2 .carousel-container {
+    background-image: url(./../img/ms-pic2.jpg);
+}
+
+.card-group-title {
+    padding: 48px 0 20px;
+}
+
+.card-group-title h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 18px);
+}
+
+.card-pic img {
+    width: 100%;
+}
+
+.card-text span {
+    color: #0067b8;
+}
+
+.social-group .container {
+    display: flex;
+    align-items: center;
+}
+
+.social-group span, .social-group li {
+    padding-right: 12px;
+}
+
+.social-group span {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+ul {
+    padding: 0;
+}
+
+.social-group li {
+    text-decoration-style: none;
+    display: inline-block;
+    font-size: 32px;
+}
+
+.fa-facebook-square {
+    color: #3C5499;
+}
+
+.fa-youtube-square {
+    color: #D5262B;
+}
+
+footer {
+    background-color: #F2F2F2;
+    color: #616161;
+    padding: 35px 0 17px 0;
+}
+
+footer .row {
+    display: flex;
+}
+
+.col-6 {
+    width: 16.66%;
+    padding: 0 12px;
+}
+
+.footer-lists {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-title {
+    margin-bottom: 16px;
+}
+
+.footer-items {
+    display: inline-block;
+    margin-bottom: 16px;
+    
+    /* text-decoration-style: none; */
+}
+
+.footer-items:last-child {
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.footer-sub-lists {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+    gap: 28px;
+}
